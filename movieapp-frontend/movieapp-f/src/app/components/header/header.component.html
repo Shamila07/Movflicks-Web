@@ -1,0 +1,37 @@
+
+<mat-toolbar>
+    <mat-toolbar-row class="justify-content-between">
+        <div class="logo">
+            <img src="assets\favicon.ico"  width="30px" height="30px" alt="LibraryLogo">
+        <button mat-icon-button (click)="toggleSidebar()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        </div>
+        <div class="row mr-2 ml-auto">
+            <ul>
+                <li>
+                    <button mat-button [mat-menu-trigger-for]="menu"  class="user mt-2 d-flex align-items-center" >
+                        <img src="assets/menuser.png"  width="50px" height="50px" alt="" class="user-image mr-1 p-2">
+                        <mat-icon class="user-image-icon-ml-1">arrow_drop_down</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item routerLink="/profile" routerLinkActive="active">
+                        <mat-icon>person</mat-icon>
+                        <span>Profile</span>
+                        
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>settings</mat-icon>
+                        <span>Settings</span>
+                    </button>
+                    <button mat-menu-item routerLink="/login" routerLinkActive="active">
+                        <mat-icon>exit_to_app</mat-icon>
+                        <span>Logout</span>
+                    </button>
+                </mat-menu>
+            </li>
+            </ul>
+        </div>
+       
+    </mat-toolbar-row>
+</mat-toolbar>

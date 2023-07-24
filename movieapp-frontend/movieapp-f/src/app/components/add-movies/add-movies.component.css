@@ -1,0 +1,36 @@
+
+.example-button-row {
+  max-width: 900px;
+  padding-inline-start: 25px;
+
+}
+.card{
+  padding-left: 300px;
+}
+.title{
+  padding-left: 160px;
+}
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+.space {
+  width: 4px;
+  height: auto;
+  display: inline-block;
+}
+
+.mat-list-item {
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 10px;;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 12px;
+}
+
+.form-field{
+  width:400px;
+  margin: 10px;
+  padding-block-start: 12px;
+  
+}

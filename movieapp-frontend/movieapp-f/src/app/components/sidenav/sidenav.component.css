@@ -1,0 +1,52 @@
+.logo {
+    padding: 12px 20px;
+    color: var(--dark);
+    font-weight: 500;
+    border-left: 0px solid var(--light);
+    border-radius: 0 20px 20px 0;
+    outline: none;
+    transition: 0.5s;
+}
+.logo-text{
+    font-weight:700;
+    font-size: 1.5rem;
+    color: whitesmoke;
+
+}
+.mat-icon {
+    vertical-align: middle;
+    margin-right: 5px ;
+}
+.mat-divider {
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-top-color: rgb(102, 102, 102);
+    margin: 0px;
+    
+}
+.mat-list-item {
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 12px;
+}
+
+.list-item-active {
+    color: #f2f5f7;
+}
+.list-item-active ::ng-deep .mat-list-item-content {
+    background: #2c3344;
+}
+.list-item-active ::ng-deep .mat-list-item-content:hover {
+    background: #2c3544;
+    ;
+}
+.list-text{
+    color: rgb(196, 192, 235);
+}
+
+
+
+

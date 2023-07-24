@@ -1,0 +1,59 @@
+.page {
+    color: #fff; ;
+    padding: 0 1 rem;
+    background: #1e293b; ;
+}
+.page__box {
+    min-height: 160px;
+    background: #1e293b;
+    margin: 0 -1rem;
+    font-size: 36px;
+}
+.page__content {
+    min-height: calc(100vh - 160px);
+    border-radius: 10px;
+}
+
+#example-card{
+    align-content: center;
+    max-width: 250px;
+    max-height: 600px;
+    
+    
+  }
+  
+.example-card-image {
+    background-size: flex;
+   
+  }
+
+#int-buttons{
+    margin-inline: 0px;
+    border-radius: 50%;
+    border: 0px solid transparent;
+    outline: none;
+   
+
+}
+.card-content {
+    height:40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: inherit;
+    background-color: #e1b382;
+  }
+
+  .dsubtitle{
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 5 px;
+    color: black;
+    margin-inline: 10px;
+    padding-left: 2px;
+    
+  }
+
+  .grid{
+    background-color: gainsboro;
+  }

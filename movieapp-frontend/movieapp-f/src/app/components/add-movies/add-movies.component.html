@@ -1,0 +1,112 @@
+<mat-card class="card">
+    <mat-card-header>
+        <mat-card-title class="title">Add a Movie</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+       
+<form>
+    <mat-list>
+        <mat-list-item>
+          <mat-form-field class="form-field">
+      <mat-label>Movie Name</mat-label>
+      <input matInput [(ngModel)]="title" [ngModelOptions]="{standalone: true}" name="name" required>
+    </mat-form-field>
+        </mat-list-item>
+    
+<mat-list-item>
+  <mat-form-field class="form-field">
+      <mat-label>Released Date</mat-label>
+      <input matInput [(ngModel)]="year" [ngModelOptions]="{standalone: true}" name="releasedDate" required>
+    </mat-form-field>
+</mat-list-item>
+  
+<mat-list-item>
+  <mat-form-field class="form-field">
+      <mat-label>Rating</mat-label>
+      <input matInput [(ngModel)]="rated" [ngModelOptions]="{standalone: true}" name="rating" required>
+    </mat-form-field>
+</mat-list-item>
+  
+<mat-list-item>
+  <mat-form-field class="form-field">
+      <mat-label>Runtime</mat-label>
+      <input matInput [(ngModel)]="runtime" [ngModelOptions]="{standalone: true}" name="runtime" required>
+    </mat-form-field>
+</mat-list-item>
+
+<mat-list-item class="list">
+  <mat-form-field class="form-field">
+      <mat-label>Genre</mat-label>
+      <mat-select [(ngModel)]="genre" [ngModelOptions]="{standalone: true}" name="genre" required>
+        <mat-option value="Action">Action</mat-option>
+        <mat-option value="Adventure">Adventure</mat-option>
+        <mat-option value="Animation">Animation</mat-option>
+        <mat-option value="Biography">Biography</mat-option>
+        <mat-option value="Comedy">Comedy</mat-option>
+        <mat-option value="Crime">Crime</mat-option>
+        <mat-option value="Documentary">Documentary</mat-option>
+        <mat-option value="Drama">Drama</mat-option>
+        <mat-option value="Family">Family</mat-option>
+        <mat-option value="Fantasy">Fantasy</mat-option>
+        <mat-option value="Film-Noir">Film-Noir</mat-option>
+        <mat-option value="History">History</mat-option>
+        <mat-option value="Horror">Horror</mat-option>
+        <mat-option value="Music">Music</mat-option>
+        <mat-option value="Musical">Musical</mat-option>
+        <mat-option value="Mystery">Mystery</mat-option>
+        <mat-option value="Romance">Romance</mat-option>
+        <mat-option value="Sci-Fi">Sci-Fi</mat-option>
+        <mat-option value="Sport">Sport</mat-option>
+        <mat-option value="Thriller">Thriller</mat-option>
+        <mat-option value="War">War</mat-option>
+        <mat-option value="Western">Western</mat-option>
+      </mat-select>
+    </mat-form-field>
+</mat-list-item>
+  
+<mat-list-item>
+    <mat-form-field class="form-field">
+      <mat-label>Director</mat-label>
+      <input matInput [(ngModel)]="director" [ngModelOptions]="{standalone: true}" name="director" required>
+    </mat-form-field>
+</mat-list-item>
+  
+<mat-list-item>
+  <mat-form-field class="form-field">
+      <mat-label>Production Company</mat-label>
+      <input matInput [(ngModel)]="production_company" [ngModelOptions]="{standalone: true}" name="productionCompany" required>
+    </mat-form-field>
+</mat-list-item>
+  
+<mat-list-item>
+  <mat-form-field class="form-field">
+      <mat-label>Cast</mat-label>
+      <input matInput [(ngModel)]="cast" [ngModelOptions]="{standalone: true}" name="cast" required>
+    </mat-form-field>
+</mat-list-item>
+  
+<mat-list-item>
+  <mat-form-field class="form-field">
+      <mat-label>Plot</mat-label>
+      <textarea class="textarea" matInput [(ngModel)]="plot" [ngModelOptions]="{standalone: true}" name="plot" required></textarea>
+    </mat-form-field>
+</mat-list-item>
+  
+<mat-list-item>
+  <mat-form-field class="form-field">
+      <mat-label>Poster Link</mat-label>
+      <input matInput [(ngModel)]="posterlink" [ngModelOptions]="{standalone: true}" name="posterLink" required>
+    </mat-form-field>
+</mat-list-item>
+
+</mat-list>
+</form>
+<section>
+<div class="example-button-row">
+    <button mat-raised-button color="primary" (click)="addMovie()">Add</button>
+    
+</div>
+</section>
+ 
+</mat-card-content>
+</mat-card>
